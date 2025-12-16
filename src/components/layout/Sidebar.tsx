@@ -12,7 +12,7 @@ export function Sidebar() {
 
     const navItems = [
         { name: '대시보드', href: '/dashboard', icon: LayoutGrid },
-        { name: '평가표', href: '/grid', icon: TableProperties },
+        { name: '평가표', href: '/assessment', icon: TableProperties },
     ];
 
     return (

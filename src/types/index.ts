@@ -45,3 +45,11 @@ export interface Mapping {
     note?: string;
     createdAt: number;
 }
+
+export interface Student {
+    id: string;
+    name: string;
+    grade: Grade;
+    studentNumber: string;
+}
+

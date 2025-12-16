@@ -1,4 +1,4 @@
-import { ATLSkill, Grade, Unit, ATLCluster } from '../types';
+import { ATLSkill, Grade, Unit, ATLCluster, Student } from '../types';
 
 export const ATL_CLUSTERS: ATLCluster[] = [
     // Communication
@@ -73,3 +73,28 @@ export const UNITS: Unit[] = [];
         });
     }
 });
+
+// Mock Students
+export const STUDENTS: Student[] = [
+    { id: 'std-001', name: '김서준', grade: 1, studentNumber: '20240101' },
+    { id: 'std-002', name: '이하은', grade: 1, studentNumber: '20240102' },
+    { id: 'std-003', name: '박지우', grade: 2, studentNumber: '20230201' },
+    { id: 'std-004', name: '최서연', grade: 2, studentNumber: '20230202' },
+    { id: 'std-005', name: '정민준', grade: 2, studentNumber: '20230203' },
+    { id: 'std-006', name: '강예은', grade: 3, studentNumber: '20220301' },
+    { id: 'std-007', name: '조시우', grade: 3, studentNumber: '20220302' },
+    { id: 'std-008', name: '윤서아', grade: 3, studentNumber: '20220303' },
+    { id: 'std-009', name: '장도윤', grade: 4, studentNumber: '20210401' },
+    { id: 'std-010', name: '임하윤', grade: 4, studentNumber: '20210402' },
+    { id: 'std-011', name: '한지호', grade: 4, studentNumber: '20210403' },
+    { id: 'std-012', name: '오수아', grade: 4, studentNumber: '20210404' },
+    { id: 'std-013', name: '신우진', grade: 5, studentNumber: '20200501' },
+    { id: 'std-014', name: '권채원', grade: 5, studentNumber: '20200502' },
+    { id: 'std-015', name: '배준서', grade: 5, studentNumber: '20200503' },
+    { id: 'std-016', name: '송지안', grade: 5, studentNumber: '20200504' },
+    { id: 'std-017', name: '홍민서', grade: 6, studentNumber: '20190601' },
+    { id: 'std-018', name: '노현우', grade: 6, studentNumber: '20190602' },
+    { id: 'std-019', name: '서윤아', grade: 6, studentNumber: '20190603' },
+    { id: 'std-020', name: '황지훈', grade: 6, studentNumber: '20190604' },
+];
+
