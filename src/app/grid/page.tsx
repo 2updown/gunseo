@@ -8,8 +8,9 @@ import { useSearchParams } from 'next/navigation';
 import { STUDENTS } from '@/lib/mockData';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
+import { Suspense } from 'react';
 
-export default function GridPage() {
+function GridContent() {
     const isPanelOpen = useStore(state => state.isPanelOpen);
     const searchParams = useSearchParams();
     const studentId = searchParams.get('student');
@@ -59,6 +60,18 @@ export default function GridPage() {
                 <DetailPanel />
             </div>
         </div>
+    );
+}
+
+export default function GridPage() {
+    return (
+        <Suspense fallback={
+            <div className="flex items-center justify-center h-screen">
+                <div className="text-gray-500">Loading...</div>
+            </div>
+        }>
+            <GridContent />
+        </Suspense>
     );
 }
 
